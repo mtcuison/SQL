@@ -1,0 +1,78 @@
+SELECT 
+   sEmployID
+FROM Employee_Master001
+WHERE sEmployID IN (SELECT sClientID FROM `Client_Master` WHERE `sLastName` = 'castro' AND `sFrstName` = 'Bryan Mark');
+
+SELECT 
+   sEmployID, 
+   sBranchCd, 
+   sPyBranch, 
+   sSgBranch, 
+   dHiredxxx, 
+   sPositnID, 
+   sDeptIDxx, 
+   sShiftIDx, 
+   cEmpTypex, 
+   sEmpLevID, 
+   sSalLvlID, 
+   sSalRegID, 
+   sTaxRegID, 
+   sIDNoxxxx, 
+   sPHealtNo, 
+   sHDMFNoxx, 
+   sPassword, 
+   dStartEmp, 
+   dRegularx, 
+   dFiredxxx, 
+   sBnkActNo, 
+   sBankIDxx, 
+   sTaxExmpt, 
+   cDeductGC, 
+   cSalTypex, 
+   cSalCompt, 
+   nBasicPay, 
+   nSalaryxx, 
+   nLveCredt, 
+   nSatCredt, 
+   sContrlNo, 
+   dInactive, 
+   cSubsidzd, 
+   cCollectr, 
+   cManagerx, 
+   cMechanic, 
+   cCredInvx, 
+   cDriverxx, 
+   xEmployID, 
+   cCompress, 
+   cSecTypex, 
+   cRecdStat, 
+   sModified, 
+   dModified 
+FROM Employee_Master001
+WHERE sEmployID IN ('M00119002528');
+
+SELECT 
+	sClientID, 
+	cClientTp, 
+	sLastName, 
+	sFrstName, 
+	sMiddName, 
+	sSuffixNm, 
+	sCompnyNm sClientNm, 
+	cGenderCd, 
+	cCvilStat, 
+	sCitizenx, 
+	dBirthDte, 
+	sBirthPlc, 
+	sAddlInfo, 
+	sSpouseID, 
+	cLRClient, 
+	cMCClient, 
+	cSCClient, 
+	cSPClient, 
+	cCPClient,
+	cRecdStat, 
+	sModified, 
+	dModified 
+FROM Client_Master
+WHERE sClientID IN ('M00119002528');
